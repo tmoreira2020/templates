@@ -29,7 +29,7 @@ The new version of Sonoff Basic uses an ESP8285 SoC.
 
 GPIO14 is no longer broken out to a contact on the PCB. Instead you can use GPIO2 labeled as `IO2` on the board. _**Take care that GPIO2 is not being pulled low when the device is booting**_. Otherwise, the device will not boot into its regular operational mode. 
 
-Alternatively, you can use [use GPIO3](https://www.youtube.com/watch?v=yavDqDzRdUk) which does not have any boot function restrictions. However, both of these GPIO are pulled high momentarily after boot. This means that any connected device may "blink" when the Sonoff is powering up.
+Alternatively, you can use [use GPIO3](https://www.youtube.com/watch?v=yavDqDzRdUk) which does not have any boot function restrictions. However, both of these GPIO are pulled high momentarily after boot. This means that any connected device may "blink" when the Sonoff is powering up. If you decide to use GPIO3 you need to configure the port in the Module configuration to Switch1 (9).
 
 Unlike GPIO3, the GPIO2 PCB contact is not prepared for a pin. You will need to solder your cable directly on the board. Be careful. Too high a temperature or long heating can damage the contact and its connectivity. You should also make sure that there is no tension on the cable. Affix the cable with a cable tie and perhaps some hot glue.
 
